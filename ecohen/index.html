@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Search Engine-->
+    <title>Ethan Cohen // Graphic &amp; Designer</title>
+    <meta name="description" content="An award-losing web designer trying to make a living off interactive, unique, bold designs." />
+    <!-- Schema.org-->
+    <meta itemprop="name" content="Ethan Cohen // Graphich &amp; Animation Designer" />
+    <meta itemprop="description" content="An award-losing web designer trying to make a living off interactive, unique, bold designs." />
+    <!-- Open Graph general-->
+    <meta name="og:title" content="Myles Nguyen // Web &amp; Interaction Designer" />
+    <meta name="og:description" content="An award-losing web designer trying to make a living off interactive, unique, bold designs." />
+    <meta name="og:image" content="img/thumbnail.jpg" />
+    <meta name="og:url" content="index.html" />
+    <meta name="og:site_name" content="Myles Nguyen // Web &amp; Interaction Designer" />
+    <meta name="og:type" content="website" />
+
+    <!-- Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_ecoli/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_ecoli/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_ecoli/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon_ecoli/site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body class="no-js">
+    <div class="screen-loader">
+        <div class="screen-loader__text">Hang on there</div>
+        <div class="progress">
+            <div class="progress__present"></div>
+            <div class="progress__holder"></div>
+        </div>
+    </div>
+    <script>
+        (function() {
+            document.body.classList.remove('no-js');
+            var perfData = window.performance.timing,
+                EstimatedTime = -(perfData.loadEventEnd - perfData.navigationStart),
+                loadingTime = parseInt((EstimatedTime / 1000) % 60) * 100;
+            var progressBar = document.getElementsByClassName('progress__present')[0];
+            progressBar.style.transition = 'width ' + loadingTime + 'ms cubic-bezier(0.215, 0.61, 0.355, 1)';
+            progressBar.style.width = progressBar.parentElement.offsetWidth * 0.9 + 'px';
+        })();
+    </script>
+    <header class="header">
+        <div class="logo clickable" data-direction="0">Ethan Co.</div>
+        <div class="navigation">
+            <div class="scrollbar">
+                <div class="clickable virgin" id="scrollbar__thumb"><span class="text--small">Grab me</span></div>
+            </div>
+        </div>
+    </header>
+    <div id="rendered">
+        <div id="canvas"></div>
+    </div>
+    <div id="cursor"><span class="cursor__text">wow nice curser</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="none">
+        <circle class="progress" stroke-width="1" stroke="#1A1A1A" cx="32" cy="32" r="29.5"></circle>
+      </svg>
+    </div>
+    <div id="page">
+        <div class="section section--front current" data-label="Welcome">
+            <div class="col reserved-space"></div>
+            <div class="col title-wrap">
+                <h1 class="col__item title text--giant text--bold"><span class="title__text plane">Graphic /</span>
+                    <span class="title__text plane">Animation</span><span class="title__text plane">Designer</span><span class="text--small plane">Based in Canberra, ACT</span></h1>
+            </div>
+            <div class="col cta-wrap">
+                <div class="col__item copyright"><span class="text--large"><span class="copyright__text plane vert eleft">©2020</span></span>
+                </div>
+                <div class="col__item cta">
+                    <div class="cta__text-wrap"><span class="text--big">Always looking for <br> new projects.</span><span class="text--regular">Let’s talk</span></div><a class="link" href="mailto:ethanleibcohen@gmail.com">ethanleibcohen@gmail.com</a>
+                </div>
+            </div>
+            <button class="section__nav section__nav--right noselect clickable">
+                <span class="text--giant text--bold">
+                    <span>&nbsp;&nbsp;&nbsp;Sunburnt</span>
+                    <br>
+                    <span>&nbsp;&nbsp;&nbsp;Breakfast</span>
+                </span>
+            </button>
+        </div>
+        <div class="section section--work" data-label="Project 01">
+            <div class="col project-wrap">
+                <div class="col__item project">
+                    <div class="project__count"><span class="project__count-current reveal">02</span><span class="project__count-total reveal">/ 28</span></div>
+
+                    <!-- Hamish: I can't figure out why this doesnt display the video? It just seems to show a black container?? -->
+                    <a class="project__image noselect" target="_blank" href="https://www.facebook.com/photo.php?fbid=2725038061070994&set=gm.205461630654162&type=3&theater">
+                        <div class="project__image-container plane plane--media">
+                            <!-- The preferred img, mp4s -->
+                            <img src="img/Sunburnt.jpg" alt="Sunburnt Breakfast Rave" />
+                            <video src="vids/visuals.mp4" muted="muted" autoplay="autoplay" loop="loop" preload="preload">
+                                    <source src="vids/visuals.mp4" type="mp4">
+                                </video>
+                        </div>
+                    <!--Up to here -->
+                    </a>
+                    <div class="project__meta">
+                        <h3 class="project__meta-title plane">Canberra Rave Scene</h3>
+                        <div class="project__meta-tags">
+                            <div class="reveal"><span>Social Media</span><span>Entertainment</span><span>Rave</span>
+                            </div>
+                            <div class="reveal"><span>Visuals</span><span>DJ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="section__nav section__nav--left noselect clickable"><span class="text--giant text--bold"><span>Back</span></span></button>
+            <button class="section__nav section__nav--right noselect clickable"><span class="text--giant text--bold"><span>Next</span></span></button>
+        </div>
+        <div class="section section--work" data-label="Work 02">
+            <div class="col project-wrap">
+                <div class="col__item project">
+                    <div class="project__count"><span class="project__count-current reveal">02</span><span class="project__count-total reveal">/ 03</span></div>
+                    <a class="project__image noselect" target="_blank" href="https://www.behance.net/gallery/85336809/Whalen-Financial-Planning">
+                        <div class="project__image-container plane plane--media"><img data-src="https://mylesnguyen.com/img/wfp.jpg" alt="Whalen Financial Planning project cover" />
+                            <video data-src="https://mylesnguyen.com/img/Whalen.mp4"></video>
+                            <noscript><img src="img/wfp.jpg" alt="Whalen Financial Planning project cover"/>
+                <video src="img/Whalen.mp4" muted="muted" autoplay="autoplay" loop="loop" preload="preload"></video>
+                </noscript>
+                        </div>
+                    </a>
+                    <div class="project__meta">
+                        <h3 class="project__meta-title plane">Whalen Financial Planning</h3>
+                        <div class="project__meta-tags">
+                            <div class="reveal"><span>Finance</span><span>Formal</span><span>Boring</span>
+                            </div>
+                            <div class="reveal"><span>Design</span><span>Development</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="section__nav section__nav--left noselect clickable"><span class="text--giant text--bold"><span>Back</span></span></button>
+            <button class="section__nav section__nav--right noselect clickable"><span class="text--giant text--bold"><span>Next</span></span></button>
+        </div>
+        <div class="section section--work" data-label="Work 03">
+            <div class="col project-wrap">
+                <div class="col__item project">
+                    <div class="project__count"><span class="project__count-current reveal">03</span><span class="project__count-total reveal">/ 03</span></div>
+                    <a class="project__image noselect" target="_blank" href="https://www.behance.net/gallery/84896693/Gym-Watch-Concept">
+                        <div class="project__image-container plane plane--media"><img data-src="https://mylesnguyen.com/img/gymwatch.jpg" alt="Gym Watch project cover" />
+                            <video data-src="https://mylesnguyen.com/img/GymWatch.mp4"></video>
+                            <noscript><img src="img/gymwatch.jpg" alt="Gym Watch project cover"/>
+                  <video src="img/GymWatch.mp4" muted="muted" autoplay="autoplay" loop="loop" preload="preload"></video>
+                </noscript>
+                        </div>
+                    </a>
+                    <div class="project__meta">
+                        <h3 class="project__meta-title plane">Gym Watch</h3>
+                        <div class="project__meta-tags">
+                            <div class="reveal"><span>Fitness</span><span>Gym</span><span>Urban</span>
+                            </div>
+                            <div class="reveal"><span>Concept</span><span>Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="section__nav section__nav--left noselect clickable"><span class="text--giant text--bold"><span>Back</span></span></button>
+            <button class="section__nav section__nav--right noselect clickable"><span class="text--giant text--bold"><span>Next</span></span></button>
+        </div>
+        <div class="section section--quote" data-label="Brains">
+            <div class="col">
+                <div class="col__item quote-wrap">
+                    <div class="quote">
+                        <div class="intro-text text--regular"><span class="reveal">A biased quote </span><span class="reveal">To make me look smart</span><span class="reveal">— or like a moron</span></div>
+                        <div class="statue">
+                            <div class="statue__img"><img data-src="https://mylesnguyen.com/img/statue.png" alt="David statue head" data-sampler="statueTexture">
+                                <noscript><img src="img/statue.png" alt="David statue head"></noscript><img class="map" data-src="https://mylesnguyen.com/img/statue_map.jpg" data-sampler="statueMapTexture">
+                            </div>
+                            <div id="canvas-statue"></div>
+                            <div class="statue__text-wrap text--small"><span class="statue__text">This trendy statue head is floating around here for absolutely no reason — </span></div>
+                        </div>
+                        <div class="quote__text"><span class="plane">Art</span><span class="plane">is like a</span><span class="plane">—fart.</span><span class="align-right plane">If you—</span>
+                            <div class="align-right">
+                                <div>—–</div>
+                                <div><span class="plane">force it,</span><span class="plane">It’s</span><span class="plane">probrably</span></div>
+                            </div><span class="align-right plane">crap.</span><span class="quote-mark quote-mark--open plane">“</span><span class="quote-mark quote-mark--close plane">”</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="section__nav section__nav--left noselect clickable"><span class="text--giant text--bold"><span>Back</span></span></button>
+            <button class="section__nav section__nav--right noselect clickable"><span class="text--giant text--bold"><span>Next</span></span></button>
+        </div>
+        <div class="section section--end" data-label="That's it">
+            <div class="col cta-wrap">
+                <div class="col__item cta">
+                    <div class="cta__title text--big">How convenient</div>
+                    <div class="cta__paragraph">One little call-to-action at the end to save you a scrolling trip and drastically increase my conversion rate by 13.47%</div>
+                    <div class="cta__reference">(According to I made that up)</div><a class="link" href="mailto:img/favicon_ecoli">Say no more</a>
+                    <div class="cta__deco"> <span class="plane vert">tou</span><span class="plane vert">ché</span></div>
+                </div>
+            </div>
+            <button class="section__nav section__nav--left noselect clickable"><span class="text--giant text--bold"><span>Back</span></span></button>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="stalking">
+            <div class="stalking__text"><span>Don't forget to violate my right to privacy</span></div>
+            <div class="stalking__media">
+
+                </svg>
+                </a><a target="_blank" href="https://www.facebook.com/ethan.cohen.3597">Fb<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none"><circle class="progress" stroke-width="1" stroke="#1A1A1A" cx="15" cy="15" r="12.5"></circle>
+
+                </svg></a><a target="_blank" href="https://www.instagram.com/ethanc108/">In<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none"> <circle class="progress" stroke-width="1" stroke="#1A1A1A" cx="15" cy="15" r="12.5"></circle>
+
+            </svg></a></div>
+        </div>
+        <div class="contact"></div>
+    </footer>
+    <div class="page-bg plane"></div><img id="pattern" src="img/pattern.png">
+    <footer>
+        <script src="js/main.js"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics-->
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-125996448-2"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'UA-125996448-2');
+        </script>
+    </footer>
+</body>
+
+</html>
